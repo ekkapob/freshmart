@@ -1,0 +1,9 @@
+extends layouts/layout.pug
+
+block content
+  - var customer = "Jack Sparrow";
+  - var people = [{name: "john"}, {name: "jane"}];
+  h1 Hello #{customer}
+  ul
+    each person in people
+      li= person.name
